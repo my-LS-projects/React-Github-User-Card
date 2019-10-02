@@ -53,6 +53,7 @@ class App extends React.Component {
       <div className="App">
         <header><User name={this.state.me.name} username={this.state.me.login} blog={this.state.me.blog} bio={this.state.me.bio} avatar_url={this.state.me.avatar_url}/></header>
         <section id="followers-section">
+          <div className="section-break"></div>
           <h2>Followers</h2>
           <div className="followers">
             {this.state.followers.map( user => (
